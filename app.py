@@ -150,8 +150,8 @@ def process_excel(file):
    # 写入表头信息（取消合并，严格分列）
    new_sheet['A1'] = "合同编号："
    new_sheet['B1'] = contract_id  # 编号将严格显示在 B1 单元格
-   new_sheet['D1'] = "客户单位："
-   new_sheet['E1'] = customer_name  # 单位将严格显示在 E1 单元格
+   new_sheet['C1'] = "客户单位："
+   new_sheet['D1'] = customer_name  # 单位将严格显示在 E1 单元格
 
    # 仅对标签（A1和D1）加粗居中，数据单元格保持默认
    new_sheet['A1'].font = header_font
